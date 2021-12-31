@@ -11,13 +11,11 @@
         }
 
         &-right-account {
-            position: absolute;
-            z-index: -11;
+            display: none;
         }
 
         &-right-cart {
-            position: absolute;
-            z-index: -11;
+            display: none;
         }
     }
 

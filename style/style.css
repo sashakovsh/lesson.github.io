@@ -302,6 +302,7 @@ ul {
 }
 
 .categories-heading {
+  z-index: 3;
   color: #FFFFFF;
   text-align: center;
   font-size: 16px;
@@ -309,12 +310,22 @@ ul {
 }
 
 .first {
-  background-image: url(../img/category-woman.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
+  position: relative;
+  background: center url(../img/category-woman-c.jpg);
   background-size: cover;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+}
+
+.first::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
 }
 
 .first:hover {
@@ -323,12 +334,24 @@ ul {
 }
 
 .second {
-  background-image: url(../img/category-men.jpg);
+  position: relative;
+  background-image: url(../img/category-man-c.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+}
+
+.second::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
 }
 
 .second:hover {
@@ -337,12 +360,24 @@ ul {
 }
 
 .third {
-  background-image: url(../img/category-kids.jpg);
+  position: relative;
+  background-image: url(../img/category-kid.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+}
+
+.third::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
 }
 
 .third:hover {
@@ -351,13 +386,25 @@ ul {
 }
 
 .fourth {
-  background-image: url(../img/category-accessories.jpg);
+  position: relative;
+  background-image: url(../img/category-acc-c.jpg);
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   height: 180px;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
+}
+
+.fourth::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
 }
 
 .fourth:hover {
@@ -1397,12 +1444,10 @@ ul {
     padding: 0 16px;
   }
   .header-right-account {
-    position: absolute;
-    z-index: -11;
+    display: none;
   }
   .header-right-cart {
-    position: absolute;
-    z-index: -11;
+    display: none;
   }
   .menu {
     width: 100%;
