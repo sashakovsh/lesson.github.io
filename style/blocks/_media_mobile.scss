@@ -1,0 +1,226 @@
+@media screen and (max-width: 767px) {
+    .wrapper {
+       min-width: 360px;
+       width: 358px;
+       padding: 0 5px;
+    }
+
+    .header {
+        &-container {
+            padding: 0 16px;
+        }
+
+        &-right-account {
+            position: absolute;
+            z-index: -11;
+        }
+
+        &-right-cart {
+            position: absolute;
+            z-index: -11;
+        }
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .promo {
+        &-bg {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: none;
+            padding: 0;
+        }
+    }
+
+    .categories {
+        margin-top: 65px;
+
+        &-wrap {
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &-container {
+            width: 100%;
+            height: 247px;
+        }
+    }
+
+    .fourth {
+        height: 111px;
+    }
+
+    .products {
+        padding-top: 64px;
+
+        &-cards-container {
+            gap: 15.62px;
+        }
+    }
+
+    .features {
+        height: 100%;
+        padding-bottom: 81px;
+        padding-top: 48px;
+        
+        &-container {
+            flex-direction: column;
+            align-items: center;
+            gap: 46px;
+        }
+
+        &-card {
+            padding-top: 58px;
+            box-sizing: border-box;
+
+            &:first-child {
+                background-position: 50% 0;
+            }
+
+            &:nth-child(2) {
+                background-position: 50% 0;
+            }
+
+            &:nth-child(3) {
+                background-position: 50% 0;
+            }
+        }
+    }
+
+    .subscribe {
+        height: 100%;
+        padding-bottom: 110px;
+        background-image: url(../../img/subscribe-bg-mobile.jpg);
+
+        &-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-left {
+            padding-top: 64px;
+        }
+
+        &-form {
+            padding-top: 59px;
+        }
+    }
+
+    .footer {
+        height: 100%;
+        padding-bottom: 9px;
+        padding-top: 43px;
+
+        &-container {
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 40px;
+        }
+    }
+
+    .offer {
+        height: 100%;
+        padding-bottom: 46px;
+        padding-top: 24px;
+    
+        &-wrap {
+            flex-direction: column;
+            align-items: center;
+            gap: 32px;
+        }
+
+        &-current {
+            padding: 0;
+        }
+
+        &-breadcrumbs {
+            padding: 0;
+        }
+    }
+
+    .products-filter {
+
+        &-body {
+            padding-left: 0;
+            width: min-content;
+
+            &[open] {
+                position: absolute;
+                z-index: 10;
+                background-color: #fff;
+                transform: translateX(-5px);
+
+                & .products-filter-toggler {
+                    width: 360px;
+                }
+                
+                & .toggler-img {
+                    fill: $color-pink;
+                    transform: scale(2, -2) translateX(5px);
+                }
+            }
+        }
+        &-toggler { 
+            font-size: 0;
+        }
+       
+    }
+
+    .filter {
+        justify-content: space-between;      
+    }
+
+    .toggler-img {
+        vertical-align: middle;
+        transform: scale(2);
+        margin-left: 0;
+    }
+
+    .products-filter-option {
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .price {
+        left: -105%;
+    }
+
+    .products-card {
+        width: 358px;
+    }
+
+    .product-info {
+        &-container {
+            width: 100%;
+            transform: none;
+            padding-top: 64px;
+            border-left: none;
+            border-right: none;
+        }
+
+        &-text {
+            width: 326px;
+        }
+    }
+
+    .info-filter {
+        padding-right: 22px;
+        padding-left: 22px;
+        font-size: 10px;
+    }
+
+    .line-grey {
+        width: 175px;
+    }
+
+    .products-filter-inputs {
+        position: absolute;
+    }
+
+    .info-filter-container {
+        position: relative;
+    }
+}

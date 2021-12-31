@@ -1,0 +1,144 @@
+@media screen and (max-width: 1200px) {
+    .wrapper {
+        min-width: 736px;
+        padding: 0 12px;
+    }
+
+    .header {
+        &-container {
+            padding: 0 16px;
+        }
+    }
+
+    .promo {
+        &-bg {
+            min-height: 370px;
+            background-position: 15%;
+            padding-top: 138px;
+            padding-right: 16px;
+            padding-left: 43%;
+        }
+    }
+
+    .categories {
+        margin-top: 20px;
+
+        &-wrap {
+            gap: 1em;
+        }
+        
+        &-container {
+            height: 167px;
+            width: 31%;
+        }
+    }
+
+    .fourth {
+        width: 100%;
+    }
+
+    .products {
+        padding-top: 154px;
+
+        &-cards-container {
+            gap: 16px;
+        }
+    }
+
+    .features {
+        height: 100%;
+        padding-bottom: 81px;
+        padding-top: 48px;
+
+        &-container {
+            flex-direction: column;
+            align-items: center;
+            gap: 46px;
+        }
+
+        &-card {
+            padding-top: 58px;
+            box-sizing: border-box;
+
+            &:first-child {
+                background-position: 50% 0;
+            }
+
+            &:nth-child(2) {
+                background-position: 50% 0;
+            }
+
+            &:nth-child(3) {
+                background-position: 50% 0;
+            }
+        }
+    }
+
+    .subscribe {
+        height: 100%;
+        padding-bottom: 140px;
+
+        &-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-left {
+            padding-top: 64px;
+        }
+
+        &-form {
+            padding-top: 48px;
+        }
+    }
+
+    .catalog {
+        padding-top: 24px;
+    }
+
+    .filter {
+        justify-content: space-between;
+    }
+    
+    .products-filter {
+
+        &-container {
+            position: relative;
+        }
+        &-inputs {
+            left: 0;
+        }
+    }
+
+    .price {
+        left: -80%;
+    }
+
+    .products-card:nth-child(3) {
+        display: none;
+    }
+
+    .paginator {
+        margin-top: 40px;
+        margin-bottom: 63px;
+    }
+
+    .product-info {
+        
+        &-container {
+            border-left: none;
+            border-right: none;
+            border-top: none;
+            padding-top: 65px;
+            transform: translateY(0)
+        }
+    }
+
+    .products {
+        padding-top: 88px;
+
+        &-quickview {
+            margin-bottom: 129px;
+        }
+    }
+}

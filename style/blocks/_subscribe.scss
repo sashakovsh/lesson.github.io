@@ -1,0 +1,92 @@
+.subscribe {
+    width: 100%;
+    height: 448px;
+    background-image: url(../img/subscribe-bc.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.subscribe-container {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+}
+
+.subscribe-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 97px;
+    width: 360px;
+}
+
+.subscribe-user-img {
+    margin-bottom: 30px;
+}
+
+.subscribe-comment {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+    text-align: center;
+}
+
+.subscribe-bold {
+    font-weight: 700;
+    font-size: 24px;
+    color: #222224;
+    line-height: 167.2%;
+}
+
+.subscribe-normal {
+    font-weight: 400;
+    font-size: 18px;
+    color: #222224;
+    line-height: 167.2%;
+    margin-bottom: 24px;
+}
+
+.subscribe-form-inputs {
+    display: flex;
+}
+
+.subscribe-form-email {
+    width: 256px;
+    height: 49px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 22px;
+    padding-right: 10px;
+    background-color: #E1E1E1;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+    box-sizing: border-box;
+    transition: $trans;
+    &:hover {
+        background-color: #c7b9b9;
+    }
+}
+
+.subscribe-form-submit {
+    width: 100px;
+    box-sizing: border-box;
+    border: none;
+    background-color: $color-pink;
+    color: #FFFFFF;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: $trans;
+}
+
+.button-pink:hover {
+    background-color: #c7b9b9;
+}

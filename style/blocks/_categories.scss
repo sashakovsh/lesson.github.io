@@ -1,0 +1,90 @@
+.categories {
+    margin-top: 65px;
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &-container {
+        background-color: #EBE6E4;
+        width: 360px;
+        height: 260px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-heading {
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+.first {
+    background-image: url(../img/category-woman.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: $trans;
+
+    &:hover {
+        transform: scale(1.01);
+    }
+}
+
+.second {
+    background-image: url(../img/category-men.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: $trans;
+
+    &:hover {
+        transform: scale(1.01);
+    }
+
+    
+}
+
+.third {
+    background-image: url(../img/category-kids.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: $trans;
+
+    &:hover {
+        transform: scale(1.01);
+    }
+}
+
+.fourth {
+    background-image: url(../img/category-accessories.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 180px;
+    transition: $trans;
+
+    &:hover {
+        transform: scale(1.01);
+    }
+}
+
+.categories-pink {
+    font-size: 24px;
+    color:$color-pink;
+    line-height: 29px;
+    transition: color 0.5s ease;
+
+    &:hover {
+        display: block;
+        color: #fff;
+        transform: $scale;
+    }
+}

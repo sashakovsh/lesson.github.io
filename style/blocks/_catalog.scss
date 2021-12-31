@@ -1,0 +1,225 @@
+.catalog {
+    padding-top: 51px;
+}
+
+.filter {
+    display: flex;
+    background-color: #fff;
+    position: relative;
+    outline: none;
+    border: none;
+
+    &-title {
+        color: $color-pink;
+        font-size: 14px;
+        padding: 11px;
+        line-height: 17px;
+        border-left: 5px solid $color-pink;
+        border-bottom: 1px solid #EBEBEB;
+        cursor: pointer;
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        position: absolute;
+        width: 360px;
+        background-color: #fff;
+        z-index: 2;
+        left: 0;
+        padding-left: 17.5px;
+        padding-right: 15.5px;
+        padding-bottom: 18px;
+        box-sizing: border-box;
+        box-shadow: 0px 30px 23px 2px rgba(34, 60, 80, 0.2);
+    }
+
+    &-list {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        padding-left: 20px;
+        margin-bottom: 24px;
+        margin-top: 24px;
+    }
+
+    &-link {
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+        transition: $trans;
+
+        &:hover {
+            color: $color-pink;
+        }
+    }
+
+    &-item {
+        &:hover {
+            transform: translateX(5px);
+        }
+    }
+}
+
+.products-filter {
+ 
+    &-body {
+        width: 360px;
+        margin-right: 30px;
+        box-sizing: border-box;
+        background-color: #fff;
+        padding-left: 16px;
+        padding-bottom: 16px;
+    }
+
+    &-body[open] {
+        color: $color-pink;
+        width: 360px;
+        box-shadow: 6px 8px 35px rgba(0, 0, 0, 0.21);
+
+        & .toggler-img {
+            fill: $color-pink;
+            transform: scale(1, -1);
+        }
+    }
+    
+    &-toggler {
+        display: block;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 16px;
+        cursor: pointer;
+        transition: $trans;
+
+        &:hover {
+            color: $color-pink;
+
+            & .toggler-img {
+                fill: $color-pink;
+            }
+        }
+    }
+
+    &-inputs {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 3;
+        padding: 7px 12px;
+        min-width: 80px;
+        background-color: #fff;
+        box-shadow: 6px 8px 35px rgba(0, 0, 0, 0.21);
+        gap: 6px;
+
+        &-item {
+            display: flex;
+            flex-direction: row;
+            gap: 7px;
+            font-size: 14px;
+            line-height: 16px;
+            color: #6F6E6E;
+            transition: $trans;
+
+            &:hover {
+                color: $color-pink;
+
+                & input[checkbox] {
+                    border: 1px solid $color-pink;
+                }
+            }
+        }
+    }
+
+    &-checkbox {
+        display: inline-block;
+    }
+    
+    &-heading {
+        position: relative;
+    }
+
+    &-option {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 14px;
+        line-height: 17px;
+        color: #6F6E6E;
+        gap: 10px;
+        cursor: pointer;
+        transition: $trans;
+
+        &:hover {
+            color: $color-pink;
+        }
+
+        &-img {
+            fill: #6F6E6E;
+        }
+    }
+
+}
+
+.checkbox {
+    border-radius: 0;
+    border: 1px solid #EBEBEB;
+}
+
+.filer-right {
+    position: relative;
+    display: flex;
+    gap: 27.98px;
+}
+
+.toggler-img {
+    transition: $trans;
+    margin-left: 11px;
+}
+
+.paginator {
+    display: inline-block;
+    width: 100%;
+    margin-top: 48px;
+    margin-bottom: 96px;
+}
+
+.reverse {
+    display: inline-block;
+    transform: rotate(180deg);
+}
+
+.paginator-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 284px;
+    height: 44px;
+    margin: 0 auto;
+    border: 1px solid #EBEBEB;
+}
+
+.catalog-paginator-link {
+    color: #C4C4C4;
+    font-weight: 300;
+}
+
+.catalog-paginator-link:hover {
+    color: #EBEBEB;
+}
+
+.current {
+    color: #EF5B70;
+}
+
+.catalog-paginator-arrow {
+    fill: #000000;
+    transition: $trans;
+
+    &:hover {
+        fill: $color-pink;
+    }
+}

@@ -1,0 +1,58 @@
+@import "blocks/vars";
+
+@import "blocks/basic";
+
+/* Header */
+
+@import "blocks/_header.scss";
+
+/* Promo */
+
+@import "blocks/_promo.scss";
+
+/* Categories */
+
+@import "blocks/_categories.scss";
+
+/* Products */
+
+@import "blocks/_products.scss";
+
+/* Features */
+
+@import "blocks/_features.scss";
+
+/* Subscribe */
+
+@import "blocks/_subscribe.scss";
+
+/* Footer */
+
+@import "blocks/_footer.scss";
+
+/* Страница catalog.html */
+
+/* Offer */
+
+@import "blocks/_offer.scss";
+
+/* Catalog */
+
+@import "blocks/_catalog.scss";
+
+// Page product.html
+
+
+// slider
+
+@import "blocks/_slider.scss";
+
+// info
+
+@import "blocks/_info.scss";
+
+// медиа-запросы
+
+@import "blocks/_media_tablet";
+
+@import "blocks/_media_mobile";

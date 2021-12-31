@@ -1,0 +1,149 @@
+.products {
+    padding-top: 96px;
+}
+
+.products-heading {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.products-heading-title {
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    margin-bottom: 6px;
+}
+
+.products-heading-subtitle {
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+}
+
+.product-card-img {
+    height: 420px;
+    background-color: #3A3838;
+    overflow: hidden;
+}
+
+.products-cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.products-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 581px;
+    background-color: #F8F8F8;
+}
+
+.products-card-info {
+    padding-top: 25px;
+    padding-left: 16.6px;
+    padding-right: 28px;
+    box-sizing: border-box;
+    transition: $trans;
+    &:hover {
+        transform: translateX(3px);
+    }
+}
+
+.product-card-heading {
+    margin-bottom: 12px;
+    font-size: 13px;
+    line-height: 16px;
+    padding-left: 2px;
+    color: #000000;
+}
+
+.product-card-text {
+    margin-bottom: 18px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+}
+
+.product-card-price {
+    font-size: 16px;
+    line-height: 19px;
+    color: $color-pink;
+    padding-left: 3px;
+}
+
+.bottom-button {
+    display: block;
+    height: 48px;
+    margin: 0 auto;
+    margin-top: 47px;
+    text-align: center;
+    margin-bottom: 95px;
+    box-sizing: border-box;
+}
+
+.products-browse-button {
+    display: inline-block;
+    padding: 14px 39px 14px 39px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    border: 1px solid $color-pink;
+}
+
+.button-white {
+    transition: $trans;
+
+    &:hover{
+        background-color: $color-pink;
+        color: #FFFFFF;
+        transform: rotate(360deg);
+    }
+}
+
+.product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 420px;
+    background-color: rgba(58, 56, 56, 0.83);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.products-card:hover .product-overlay {
+    opacity: 1;
+}
+
+.overlay-button {
+    position: relative;
+    width: 140px !important;
+    border-color: #fff;
+    color: #fff;
+    padding-left: 50px !important;
+    padding-right: 0;
+    font-size: 14px;
+    transition: $trans;
+
+    &::before {
+        content: url(../img/header-cart-white.svg);
+        position: absolute;
+        left: 10%;
+        top: 25%;
+        width: 24px;
+        height: 22px;
+    }
+
+    &:hover {
+        background-color: rgba(0,0,0,0.2);
+        transform: scale(1.1);
+    }
+}

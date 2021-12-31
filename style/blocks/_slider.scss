@@ -1,0 +1,26 @@
+.slider {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #F7F7F7;
+    height: 777px;
+    border-bottom: $grey-border;
+    border-top: $grey-border;
+
+    &-content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    };
+
+    &-button {
+        align-self: center;
+        width: 47px;
+        height: 47px;
+        background-color: #EAEAEA;
+
+        &:hover {
+            fill: $color-pink;
+        }
+    }
+}

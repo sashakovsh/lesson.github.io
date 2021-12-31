@@ -1,0 +1,150 @@
+.header {
+    z-index: 5;
+    background-color: #222222;
+    padding: 18px 0;
+    box-sizing: border-box;
+    max-height: 75px;
+
+    &-container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-logo-link {
+        margin-right: 38px;
+    }
+
+    &-logo-img {
+        transition: $trans;
+    
+        &:hover {
+            transform: $scale;
+        }
+    }
+
+    &-right {
+        display: flex;
+        max-width: 168px;
+        padding-top: 8px;
+        gap: 33px;
+
+        &-cart {
+            position: relative;
+        }
+    }
+
+    &-white {
+        fill: #E8E8E8;
+        transition: $trans;
+
+        &:hover {
+            fill: $color-pink;
+            transform: $scale;
+        }
+    }
+}
+
+.cart-counter {
+    position: absolute;
+    border-radius: 100%;
+    color: white;
+    position: absolute;
+    background-color: $color-pink;
+    width: 19px;
+    height: 19px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    top: -8px;
+    right: -9px;
+    transition: $trans;
+
+    &:hover {
+        color: $color-pink;
+        background-color: #fff;
+        transform: $scale;
+    }
+}
+
+.menu {
+    z-index: -1;
+    transform: scale(0);
+    transform-origin: top;
+    position: absolute;
+    width: 232px;
+    height: 764px;
+    right: 0;
+    top: 57px;
+    background-color: #fff;
+    box-shadow: -4px 4px 8px#c4c4c4;
+    padding-top: 34px;
+    padding-left: 37px;
+    transition: all 0.5s ease-out;
+    &-close {
+        position: absolute;
+        top: 16px;
+        right: 17px;
+        fill: #6F6E6E;
+
+        &:hover {
+            fill: #000;
+            transform: scale(0.9);
+        }
+    }
+
+    &-header {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        margin-bottom: 24px;
+    }
+
+    &-navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        &-heading {
+            display: inline-block;
+            font-size: 14px;
+            line-height: 17px;
+            color: $color-pink;
+            margin-bottom: 12px;
+            transition: $trans;
+
+            &:hover {
+                color: #6F6E6E;
+            }
+        }
+
+        &-group {
+            display: flex;
+            flex-direction: column;
+            gap: 11px;
+            padding-left: 20px;
+            font-size: 14px;
+            line-height: 17px;
+            color: #6F6E6E;
+        }
+
+        &-link {
+            font-size: 14px;
+            line-height: 17px;
+            color: #6F6E6E;
+            text-decoration: none;
+            transition: $trans;
+
+            &:hover {
+                color: $color-pink;
+            }
+        }
+    }
+}
+
+.menu-hamb:hover .menu {
+    z-index: 7;
+    transform: scale(1);
+}

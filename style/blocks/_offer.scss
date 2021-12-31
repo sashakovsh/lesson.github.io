@@ -1,0 +1,42 @@
+.offer {
+    height: 148px;
+    background-color: #F8F3F4;
+
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-current {
+        font-weight: 400;
+        color: $color-pink;
+        padding-top: 60px;
+    }
+
+    &-breadcrumbs {
+        font-weight: 300;
+        padding-top: 66px;
+        font-size: 14px;
+        line-height: 16.8px;
+
+        &-link {
+            color: #636363;
+            &:hover {
+                color: $color-pink;
+            }
+        
+            &::after {
+                content: " / ";
+            }
+        }
+    }
+}
+
+.offer-breadcrumbs-active::after {
+    content: none;
+}
+
+.offer-breadcrumbs-active {
+    color: $color-pink;
+    font-weight: 700;
+}
