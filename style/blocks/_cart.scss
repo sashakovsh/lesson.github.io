@@ -1,0 +1,44 @@
+.cart {
+    padding-top: 96px;
+    padding-bottom: 128px;
+
+    &-body {
+        display: flex;
+
+        &-products {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            &-item {
+                display: flex;
+                height: 306px;
+
+                & img {
+                    height: inherit;
+                }
+            }
+
+            &-text {
+                padding-top: 22px;
+                padding-left: 31px;
+            }
+        }
+    }
+
+    &-input {
+        width: 30px;
+        border-radius: 0;
+        border: 1px solid #EAEAEA;
+        text-align: center;
+        box-sizing: border-box;
+
+        &::-webkit-outer-spin-button {
+            display: none;
+        }
+        &::-webkit-inner-spin-button {
+            display: none;
+        }
+    }
+}
+

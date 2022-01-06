@@ -47,10 +47,12 @@
 }
 
 .cart-counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     border-radius: 100%;
     color: white;
-    position: absolute;
     background-color: $color-pink;
     width: 19px;
     height: 19px;
@@ -59,7 +61,7 @@
     text-align: center;
     top: -8px;
     right: -9px;
-    transition: $trans;
+    transition: background-color 0.4s ease;
 
     &:hover {
         color: $color-pink;
