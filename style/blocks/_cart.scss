@@ -13,25 +13,56 @@
             &-item {
                 display: flex;
                 height: 306px;
+                width: 652px;
+                position: relative;
+                box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+                transition: $trans;
+
+                &:hover {
+                    transform: translateX(-5px);
+                }
 
                 & img {
-                    height: inherit;
+                    height: 100%;
                 }
             }
 
             &-text {
+                width: 240px;
                 padding-top: 22px;
                 padding-left: 31px;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 26px;
+                color: #575757;
+            }
+
+            &-heading {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 29px;
+                color: #222222;
+                margin-bottom: 42px;
+            }
+
+            &-container {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
             }
         }
     }
 
     &-input {
-        width: 30px;
+        width: 44px;
+        height: 24.95px;
         border-radius: 0;
         border: 1px solid #EAEAEA;
         text-align: center;
         box-sizing: border-box;
+        font-size: 18px;
+        line-height: 22px;
+        color: #656565;
 
         &::-webkit-outer-spin-button {
             display: none;
