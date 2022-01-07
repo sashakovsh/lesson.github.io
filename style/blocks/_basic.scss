@@ -11,6 +11,7 @@ a {
 button {
     border: none;
     background: none;
+    cursor: pointer;
 }
 
 summary {
@@ -33,4 +34,8 @@ ul {
 .wrapper {
     max-width: 1140px;
     margin: 0 auto;
+}
+
+.bold {
+    font-weight: 700;
 }

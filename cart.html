@@ -138,11 +138,14 @@
                         <img src="img/products-card-men2.png" alt="products-card-1">
                         <div class="cart-body-products-text">
                             <h3 class="cart-body-products-heading">MANGO PEOPLE T-SHIRT</h3>
-                            <p>Price: <span class="promo-pink">$300</span></p>
-                            <p>Color: Red</p>
-                            <p>Size: Xl</p>
-                            <p>Quantity: &nbsp;&nbsp;<input class="cart-input" type="number" min="1" placeholder="2">
-                            </p>
+                            <div class="cart-body-products-container">
+                                <p>Price: <span class="promo-pink">$300</span></p>
+                                <p>Color: Red</p>
+                                <p>Size: Xl</p>
+                                <p>Quantity: &nbsp;&nbsp;<input class="cart-input" type="number" min="1"
+                                        placeholder="2">
+                                </p>
+                            </div>
                         </div>
                         <button class="menu-close"><svg width="13" height="13" viewBox="0 0 13 13"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -152,14 +155,29 @@
                         </button>
                     </div>
                 </div>
-                <div class="cart-body-form">
-
+                <div>
+                    <form action="https://sashakovsh.github.io/lesson.github.io/cart.html" class="cart-body-right">
+                        <div class="cart-body-form">
+                            <fieldset>SHIPPING ADDRESS</fieldset>
+                            <input type="text" placeholder="Banglasesh">
+                            <input type="text" placeholder="State">
+                            <input type="number" placeholder="Postcode / Zip">
+                            <button>GET A QUOTE</button>
+                        </div>
+                        <div class="cart-body-form-bottom">
+                            <p class="text-small">SUB TOTAL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>$900</span></p>
+                            <p class="text-large">GRAND TOTAL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                    class="promo-pink bold">$900</span></p>
+                            <button class="pink-button">PROCEED TO CHECKOUT</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-
-
+            <div class="cart-body-controls">
+                <button>CLEAR SHOPPING CART</button>
+                <button>CONTINUE SHOPPING</button>
+            </div>
         </div>
-
     </section>
 
 

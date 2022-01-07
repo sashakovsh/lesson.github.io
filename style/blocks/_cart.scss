@@ -4,6 +4,30 @@
 
     &-body {
         display: flex;
+        gap: 128px;
+
+        &-controls {
+            margin-top: 72px;
+            width: 652px;
+            display: flex;
+            justify-content: space-between;
+
+            & button {
+                height: 50px;
+                width: 235px;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                color: #000000;
+                border: 1px solid #A4A4A4;
+                transition: $trans;
+
+                &:hover {
+                    background-color: #A4A4A4;
+                    color: #EAEAEA;
+                }
+            }
+        }
 
         &-products {
             display: flex;
@@ -19,7 +43,7 @@
                 transition: $trans;
 
                 &:hover {
-                    transform: translateX(-5px);
+                    transform: translateX(3px);
                 }
 
                 & img {
@@ -51,11 +75,95 @@
                 gap: 8px;
             }
         }
+
+        &-right {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            box-sizing: border-box;
+        }
+        
+        &-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            height: 306px;
+
+            & fieldset {
+                border: none;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #222222;
+            }
+
+            & input {
+                padding: 13px 17px;
+                border: 1px solid #EAEAEA;
+                transition: $trans;
+
+                &::-webkit-outer-spin-button {
+                    display: none;
+                }
+                &::-webkit-inner-spin-button {
+                    display: none;
+                }
+
+                &:hover {
+                    background-color: #EAEAEA;
+                }
+            }
+
+            & button {
+                font-weight: 300;
+                font-size: 11px;
+                line-height: 13px;
+                color: #4A4A4A;
+                width: 101px;
+                height: 35px;
+                border: 1px solid #EAEAEA;
+                cursor: pointer;
+                transition: $trans;
+
+                &:hover {
+                    background-color: #EAEAEA;
+                }
+            }
+
+            &-bottom {
+                width: 360px;
+                height: 214px;
+                padding: 42px;
+                background-color: #F5F3F3;
+                text-align: right;
+
+                & .text {
+
+                    &-small {
+                        font-size: 11px;
+                        line-height: 13px;
+                        color: #4A4A4A;
+                        margin-bottom: 12px;
+                    }
+                   
+                    &-large {
+                        font-weight: 300;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #222222;
+                        padding-bottom: 21px;
+                        margin-bottom: 17px;
+                        display: inline-block;
+                        width: 100%;
+                        border-bottom: 1px solid #E2E2E2;
+                    }
+                }
+            }
+        }
     }
 
     &-input {
         width: 44px;
-        height: 24.95px;
         border-radius: 0;
         border: 1px solid #EAEAEA;
         text-align: center;
@@ -70,6 +178,22 @@
         &::-webkit-inner-spin-button {
             display: none;
         }
+    }
+}
+
+.pink-button {
+    box-sizing: border-box;
+    padding: 16px 38px;
+    background-color: $color-pink;
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;  
+    transition: $trans;
+
+    &:hover {
+        color: $color-pink;
+        background-color: #fff;
     }
 }
 
