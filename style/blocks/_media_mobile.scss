@@ -221,4 +221,45 @@
     .info-filter-container {
         position: relative;
     }
+
+    .cart {
+        padding-top: 39px;
+    
+        &-body {
+            gap: 62px;
+            width: 358px;
+
+            &-controls {
+                justify-content: center;
+                gap: 48px;
+                width: 100%;
+                order: 1;
+            }
+
+            &-right {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+         
+            &-form {
+               
+
+                &-bottom {
+                    
+                   
+                }
+
+            }
+
+            &-products {
+                width: 100%;
+                &-item {
+                   width: 100%;
+                }
+            }
+        }
+    }
+
 }

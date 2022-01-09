@@ -141,4 +141,54 @@
             margin-bottom: 129px;
         }
     }
+
+    .cart {
+        padding-top: 59px;
+    
+        &-body {
+            gap: 62px;
+            flex-direction: column;
+            align-items: center;
+
+            &-controls {
+                justify-content: center;
+                gap: 48px;
+                width: 734px;
+                order: 1;
+            }
+
+            &-right {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+         
+            &-form {
+                width: 48%;
+
+                &-bottom {
+                    width: 48%;
+                    margin-top: 39.5px;
+                }
+            }
+
+            &-products {
+            
+                &-item {
+                    max-width: 734px;
+                }
+            }
+        }
+    }
+
+    .form {
+        order: 2;
+        max-width: 734px;
+    }
+
+    .pink-button {
+        max-width: 277px;
+    }
+
 }

@@ -5,9 +5,9 @@
     &-body {
         display: flex;
         gap: 128px;
+        flex-wrap: wrap;
 
         &-controls {
-            margin-top: 72px;
             width: 652px;
             display: flex;
             justify-content: space-between;
@@ -140,6 +140,7 @@
                 & .text {
 
                     &-small {
+                        transform: translateX(5px);
                         font-size: 11px;
                         line-height: 13px;
                         color: #4A4A4A;
